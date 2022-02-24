@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="game">
+        <header>
+          <h1 class="title">WORDLE</h1>
+        </header>
+
+        <div id="boarder-container">
+          <div id="board"></div>
+        </div>
+
+        <div id="keyboard-container">
+          <div class="keyboard-row">
+            <button screen-key="q">q</button>
+            <button screen-key="w">w</button>
+            <button screen-key="e">e</button>
+            <button screen-key="r">r</button>
+            <button screen-key="t">t</button>
+            <button screen-key="y">y</button>
+            <button screen-key="u">u</button>
+            <button screen-key="i">i</button>
+            <button screen-key="o">o</button>
+            <button screen-key="p">p</button>
+          </div>
+          <div class="keyboard-row">
+            <div class="spacer-half"></div>
+            <button screen-key="a">a</button>
+            <button screen-key="s">s</button>
+            <button screen-key="d">d</button>
+            <button screen-key="f">f</button>
+            <button screen-key="g">g</button>
+            <button screen-key="h">h</button>
+            <button screen-key="j">j</button>
+            <button screen-key="k">k</button>
+            <button screen-key="l">l</button>
+            <div class="spacer-half"></div>
+          </div>
+          <div class="keyboard-row">
+            <button screen-key="del" class="wide-button">Del</button>
+            <button screen-key="z">z</button>
+            <button screen-key="x">x</button>
+            <button screen-key="c">c</button>
+            <button screen-key="v">v</button>
+            <button screen-key="b">b</button>
+            <button screen-key="n">n</button>
+            <button screen-key="m">m</button>
+            <button screen-key="enter" class="wide-button">Enter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
