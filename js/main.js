@@ -132,23 +132,4 @@ document.addEventListener("DOMContentLoaded", () => {
     word = wordList[Math.floor(Math.random() * wordList.length)];
   }
 
-  /*function getNewWord() {
-    // Importing the fs module
-    let fs = require("fs");
-
-    // Intitializing the readFileLines with the file
-    const readFileLines = (filename) =>
-      fs.readFileSync(filename).toString("UTF8").split("\n");
-
-    // Calling the readFiles function with file name
-    let arr = readFileLines("sgb-words.txt");
-
-    // Printing the response array
-    console.log(arr);
-
-    word = wordList[Math.floor(Math.random() * wordList.length)];
-
-    return arr;
-  }*/
-
 });
