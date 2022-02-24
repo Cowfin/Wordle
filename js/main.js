@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function getNewWord() {
-    //word = wordList[Math.floor(Math.random() * wordList.length)];
-    word = "likes";
+    word = wordList[Math.floor(Math.random() * wordList.length)];
   }
 });
