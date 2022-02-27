@@ -101,8 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const removedLetter = currentWordArr.pop();
 
     guessedWords[guessedWords.length - 1] = currentWordArr;
-    console.log(guessedWords.length * 5);
-    console.log(availableSpace);
 
     if (
       guessedWords.length * 5 >= availableSpace &&
