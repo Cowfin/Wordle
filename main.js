@@ -101,13 +101,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const removedLetter = currentWordArr.pop();
 
     guessedWords[guessedWords.length - 1] = currentWordArr;
+    console.log(guessedWords.length * 5);
+    console.log(availableSpace);
 
-    const lastLetterElement = document.getElementById(
-      String(availableSpace - 1)
-    );
+    if (
+      guessedWords.length * 5 >= availableSpace &&
+      (guessedWords.length - 1) * 5 + 1 < availableSpace
+    ) {
+      const lastLetterElement = document.getElementById(
+        String(availableSpace - 1)
+      );
 
-    lastLetterElement.textContent = "";
-    availableSpace--;
+      lastLetterElement.textContent = "";
+      availableSpace--;
+    }
   }
 
   function getTileColour(letter, index) {
@@ -127,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function getNewWord() {
-    //word = wordList[Math.floor(Math.random() * wordList.length)];
-    word = "likes";
+    word = wordList[Math.floor(Math.random() * wordList.length)];
   }
 });
